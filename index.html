@@ -1,0 +1,70 @@
+<!doctype html>
+	<html>
+		<head>
+			<link rel="stylesheet" href="internalResources/usr/typefaces/ui/typesuicss.css">
+			<link rel="stylesheet" href="internalResources/vi.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta charset="UTF-8">
+			<title>Authorization compulsory to connect to this network!</title>
+		</head>
+		<body>
+			<div class="_06E5captiveMainFrame">
+				<h2>Not authorized to connect to this network!</h2>
+				<p>Please type your username and password in order to connect to this network:</p>
+				<p class="hlight">net.name</p>
+				<table>
+					<tr>
+						<td>
+							<p>Username or ID</p>
+							<input type="text" maxlength=18>
+						</td>
+						<td>
+							<p>Password</p>
+							<!-- Only these characters are allowed: numbers from 0-9, uppercase/lowercase letters from A/a to F/f, as well as +-*/%_=#$ -->
+							<input type="text" maxlength=18 onInput="certainChars(this)">
+						</td>
+						<td>
+							<button class="usrpswd0" onClick="pswdusrGo()">Go</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Secret Number 1 in 0x</p>
+						</td>
+						<td>
+							<!-- Only 2-digit (8-bit) hexadecimal numbers are allowed for this field. -->
+							<input class="bytesecnum" type="text" maxlength=2 onInput="certainCharsHex(this)">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Secret Number 2 in 0x</p>
+						</td>
+						<td>
+							<!-- Only 2-digit (8-bit) hexadecimal numbers are allowed for this field. -->
+							<input class="bytesecnum" type="text" maxlength=2 onInput="certainCharsHex(this)">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Secret Number 3 in 0x</p>
+						</td>
+						<td>
+							<!-- Only 2-digit (8-bit) hexadecimal numbers are allowed for this field. -->
+							<input class="bytesecnum" type="text" maxlength=2 onInput="certainCharsHex(this)">
+						</td>
+					</tr>
+				</table>
+				<script src="internalResources/pswdlimits.js"></script>
+				<p class="notex9E8">
+					Some Wi-Fi networks may solely require you to accept their terms & conditions of use policies.
+					Don't attempt to hack this website, with the purpose of accessing to it without proper authorization.
+				</p>
+				<p class="warnx9E8">
+					Your browser must support JavaScript to continue this process.
+					You ought to use an HTML5-supported browser to access to all functions available here.
+					When pressing the Go button, you're accepting the policies treated <a href="usr/termssvc.txt">here</a>.
+				</p>
+			</div>
+		</body>
+	</html>
