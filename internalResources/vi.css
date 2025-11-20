@@ -1,14 +1,14 @@
 
 body {
 	margin: 0;
-	background-color: rgb(204, 204, 204);
+	background-color: rgb(238, 238, 238);
 }
 div._06E5captiveMainFrame {
 	font-family: commis500;
 	font-weight: 500;
 	margin: 0 auto;
-	background-color: rgb(170, 170, 170, 0.66);
-	background-color: rgba(170, 170, 170, 0.66);
+	background-color: rgb(240, 237, 238, 0.66);
+	background-color: rgba(240, 237, 238, 0.66);
 	border: 0;
 	border-radius: 12.5px;
 	box-shadow: 0 1.5px 2.5px black;
@@ -16,12 +16,11 @@ div._06E5captiveMainFrame {
 	padding: 10px;
 }
 h2 {
-	font-family: commis700, "Helvetica", "Arial", "Roboto";
-	font-weight: 700;
+	font-family: commis500, "Helvetica", "Arial", "Roboto";
+	font-weight: 500;
 	line-height: 1.5;
 	font-size: 25px;
 	letter-spacing: 2.5px;
-	background-color: yellow;
 	margin: 0;
 }
 p {
@@ -48,14 +47,16 @@ p.notex9E8 {
 	color: rgb(51, 51, 51);
 }
 input {
-	background-color: #ccf;
+	background-color: #f0edee;
+	background-image: linear-gradient(to bottom, white, #f0edee);
 	font-family: commis300, "Helvetica", "Arial", "Roboto";
 	font-weight: 300;
 	line-height: 1.5;
 	font-size: 15px;
 	width: 224px;
 	margin: auto;
-	border: 3px inset black;
+	border: 1.5px solid black;
+	border-radius: 2.5px;
 	padding: 2px;
 }
 input.bytesecnum {
