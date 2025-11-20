@@ -20,8 +20,8 @@
 						</td>
 						<td>
 							<p>Password</p>
-							<!-- Only these characters are allowed: numbers from 0-9, uppercase/lowercase letters from A/a to F/f, as well as +-*/%_=#$ -->
-							<input type="text" maxlength=18 onInput="certainChars(this)">
+							<!-- Only these characters are allowed: numbers from 0-9, uppercase/lowercase letters from A/a to Z-z, as well as +\-*$%#= and even the space. -->
+							<input type="password" maxlength=18 onInput="certainChars(this)">
 						</td>
 						<td>
 							<button class="usrpswd0" onClick="pswdusrGo()">Go</button>
@@ -29,38 +29,38 @@
 					</tr>
 					<tr>
 						<td>
-							<p>Secret Number 1 in 0x</p>
+							<p>Secret Key 1 in 0x</p>
 						</td>
 						<td>
-							<!-- Only 2-digit (8-bit) hexadecimal numbers are allowed for this field. -->
-							<input class="bytesecnum" type="text" maxlength=2 onInput="certainCharsHex(this)">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<p>Secret Number 2 in 0x</p>
-						</td>
-						<td>
-							<!-- Only 2-digit (8-bit) hexadecimal numbers are allowed for this field. -->
-							<input class="bytesecnum" type="text" maxlength=2 onInput="certainCharsHex(this)">
+							<!-- Only these characters are allowed: numbers from 0-9, uppercase/lowercase letters from A/a to Z-z, as well as +\-*$%#= -->
+							<input class="bytesecnum" type="password" maxlength=2 onInput="certainCharsHex(this)">
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p>Secret Number 3 in 0x</p>
+							<p>Secret Key 2 in 0x</p>
 						</td>
 						<td>
-							<!-- Only 2-digit (8-bit) hexadecimal numbers are allowed for this field. -->
-							<input class="bytesecnum" type="text" maxlength=2 onInput="certainCharsHex(this)">
+							<!-- Only these characters are allowed: numbers from 0-9, uppercase/lowercase letters from A/a to Z-z, as well as +\-*$%#= -->
+							<input class="bytesecnum" type="password" maxlength=2 onInput="certainCharsHex(this)">
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p>Secret Number 4 in 0x</p>
+							<p>Secret Key 3 in 0x</p>
 						</td>
 						<td>
-							<!-- Only 2-digit (8-bit) hexadecimal numbers are allowed for this field. -->
-							<input class="bytesecnum" type="text" maxlength=2 onInput="certainCharsHex(this)">
+							<!-- Only these characters are allowed: numbers from 0-9, uppercase/lowercase letters from A/a to Z-z, as well as +\-*$%#= -->
+							<input class="bytesecnum" type="password" maxlength=2 onInput="certainCharsHex(this)">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Secret Key 4 in 0x</p>
+						</td>
+						<td>
+							<!-- Only these characters are allowed: numbers from 0-9, uppercase/lowercase letters from A/a to Z-z, as well as +\-*$%#= -->
+							<input class="bytesecnum" type="password" maxlength=2 onInput="certainCharsHex(this)">
 						</td>
 					</tr>
 				</table>
